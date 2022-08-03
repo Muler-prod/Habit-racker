@@ -7,7 +7,7 @@
 
 import Foundation
 
-class WelcomeViewModel: ViewModelType {
+class JournalsViewModel: ViewModelType {
   struct Input {}
   
   struct Output {}
