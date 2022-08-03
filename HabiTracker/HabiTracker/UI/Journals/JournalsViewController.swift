@@ -7,10 +7,10 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController, StoryboardInitiated {
+class JournalsViewController: UIViewController, StoryboardInitiated {
   
   // MARK: - Properties
-  private var viewModel: WelcomeViewModel?
+  private var viewModel: JournalsViewModel?
 
   // MARK: - View Cycle
   override func viewDidLoad() {
@@ -19,12 +19,12 @@ class WelcomeViewController: UIViewController, StoryboardInitiated {
   }
   
   // MARK: - Helpers
-  func configure(_ viewModel: WelcomeViewModel) {
+  func configure(_ viewModel: JournalsViewModel) {
     self.viewModel = viewModel
   }
   
   private func bind() {
-    let viewModel = WelcomeViewModel()
+    let viewModel = JournalsViewModel()
     let output = viewModel.transform(.init())
   }
 

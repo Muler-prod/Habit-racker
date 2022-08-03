@@ -18,8 +18,8 @@ class AppCoordinator: Coordinator {
   
   func start() {
     
-    let viewController = WelcomeViewController.createFromStoryboard()
-    let viewModel = WelcomeViewModel()
+    let viewController = JournalsViewController.createFromStoryboard()
+    let viewModel = JournalsViewModel()
     viewController.configure(viewModel)
     navigationController = UINavigationController(rootViewController: viewController)
     window.rootViewController = navigationController

@@ -34,7 +34,7 @@ extension StoryboardInitiated where Self: UIViewController {
   }
 }
 
-extension StoryboardInitiated where Self: WelcomeViewController {
+extension StoryboardInitiated where Self: JournalsViewController {
   static var storyboardName: String {
     return "Welcome"
   }
