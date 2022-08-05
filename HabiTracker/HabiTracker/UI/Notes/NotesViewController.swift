@@ -1,0 +1,31 @@
+//
+//  NotesViewController.swift
+//  HabiTracker
+//
+//  Created by Georgie Muler on 05.08.2022.
+//
+
+import UIKit
+
+class NotesViewController: UIViewController {
+  
+  // MARK: - Properties
+  private var viewModel: NotesViewModel?
+
+  // MARK: - View Cycle
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    bind()
+  }
+  
+  // MARK: - Helpers
+  func configure(_ viewModel: NotesViewModel) {
+    self.viewModel = viewModel
+  }
+  
+  private func bind() {
+    let viewModel = NotesViewModel()
+    let output = viewModel.transform(.init())
+  }
+
+}
